@@ -84,7 +84,7 @@ export default function Page() {
       )}
 
       <div style={{ display: 'flex', gap: 8, margin: '28px 0 12px' }}>
-        {['solana', 'base', 'bsc', 'ethereum', 'all'].map(c => (
+        {['solana', 'robinhood', 'base', 'bsc', 'ethereum', 'all'].map(c => (
           <button key={c} onClick={() => setFilter(c)} style={{ background: filter === c ? '#a3e635' : '#27272a', color: filter === c ? '#000' : '#fff', border: 0, borderRadius: 999, padding: '6px 14px', fontWeight: 700, cursor: 'pointer' }}>{c}</button>
         ))}
         <input value={query} onChange={e => setQuery(e.target.value)} placeholder="filter…" style={{ marginLeft: 'auto', background: '#09090b', border: '1px solid #3f3f46', borderRadius: 999, padding: '6px 14px', color: '#fff' }} />
